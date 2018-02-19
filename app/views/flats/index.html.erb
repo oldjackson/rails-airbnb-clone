@@ -1,0 +1,4 @@
+<h1>Flats</h1>
+<% @flats.each_with_index do |flat, i| %>
+  <div><a href="/flats/<%=i %>"><%= "#{flat['price']} #{flat['priceCurrency']}: #{flat['name']}" %></a></div>
+<% end %>
